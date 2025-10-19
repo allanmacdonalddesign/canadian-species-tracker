@@ -1,205 +1,982 @@
-// Mock data for endangered species in each province
-// In a real application, this would come from APIs like NatureServe Explorer
-
 export const SPECIES_DATA = {
-  'AB': {
-    species: [
+  "YT": {
+    "species": [
       {
-        name: 'Woodland Caribou',
-        scientificName: 'Rangifer tarandus caribou',
-        status: 'Threatened',
-        description: 'The woodland caribou is a subspecies of caribou found in Alberta\'s boreal forests. Habitat loss and fragmentation are major threats to this species.',
-        population: 'Declining',
-        threats: ['Habitat loss', 'Climate change', 'Industrial development']
+        "name": "Hypnum revolutum",
+        "scientificName": "Hypnum revolutum",
+        "frenchName": "",
+        "status": "Unknown (Subnational)",
+        "description": "Hypnum revolutum (Hypnum revolutum) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
       },
       {
-        name: 'Greater Sage-Grouse',
-        scientificName: 'Centrocercus urophasianus',
-        status: 'Endangered',
-        description: 'This large grouse species has experienced significant population declines due to habitat loss and fragmentation in Alberta\'s grasslands.',
-        population: 'Critically low',
-        threats: ['Habitat loss', 'Energy development', 'Climate change']
+        "name": "Indigo Bunting",
+        "scientificName": "Passerina cyanea",
+        "frenchName": "Passerin indigo",
+        "status": "Not Applicable (Subnational)",
+        "description": "Indigo Bunting (Passerina cyanea) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
       },
       {
-        name: 'Swift Fox',
-        scientificName: 'Vulpes velox',
-        status: 'Endangered',
-        description: 'The swift fox is North America\'s smallest wild dog. It was extirpated from Canada but has been reintroduced to parts of Alberta.',
-        population: 'Recovering',
-        threats: ['Habitat loss', 'Predation', 'Disease']
+        "name": "Lemmon's Rockcress",
+        "scientificName": "Boechera lemmonii",
+        "frenchName": "Arabette de Lemmon",
+        "status": "Unknown (Subnational)",
+        "description": "Lemmon's Rockcress (Boechera lemmonii) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
       },
       {
-        name: 'Piping Plover',
-        scientificName: 'Charadrius melodus',
-        status: 'Endangered',
-        description: 'A small shorebird that nests on sandy beaches and riverbanks. Very sensitive to human disturbance.',
-        population: 'Stable',
-        threats: ['Habitat disturbance', 'Predation', 'Climate change']
+        "name": "Western Tube Lichen",
+        "scientificName": "Hypogymnia occidentalis",
+        "frenchName": "Hypogymnie de l'Ouest",
+        "status": "Unrankable (Subnational)",
+        "description": "Western Tube Lichen (Hypogymnia occidentalis) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
       },
       {
-        name: 'Whooping Crane',
-        scientificName: 'Grus americana',
-        status: 'Endangered',
-        description: 'One of North America\'s most endangered birds. Migrates through Alberta on its way to breeding grounds in Wood Buffalo National Park.',
-        population: 'Recovering',
-        threats: ['Habitat loss', 'Climate change', 'Collision with power lines']
+        "name": "Striated Long-horned Beetle",
+        "scientificName": "Asemum striatum",
+        "frenchName": "Longicorne stri\u00e9",
+        "status": "Secure (Subnational)",
+        "description": "Striated Long-horned Beetle (Asemum striatum) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
       }
     ],
-    trends: {
-      overallDecline: -23,
-      speciesAtRisk: 45,
-      recoveryPrograms: 12,
-      protectedAreas: 8.2
+    "trends": {
+      "overallDecline": -15,
+      "speciesAtRisk": 5,
+      "recoveryPrograms": 0,
+      "protectedAreas": 0.0
     }
   },
-  'BC': {
-    species: [
+  "NT": {
+    "species": [
       {
-        name: 'Spotted Owl',
-        scientificName: 'Strix occidentalis caurina',
-        status: 'Endangered',
-        description: 'The northern spotted owl is critically endangered in British Columbia due to logging of old-growth forests.',
-        population: 'Critically low',
-        threats: ['Habitat loss', 'Logging', 'Climate change']
+        "name": "Lake Emerald",
+        "scientificName": "Somatochlora cingulata",
+        "frenchName": "",
+        "status": "Unrankable (Subnational)",
+        "description": "Lake Emerald (Somatochlora cingulata) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
       },
       {
-        name: 'Mountain Caribou',
-        scientificName: 'Rangifer tarandus caribou',
-        status: 'Endangered',
-        description: 'A distinct ecotype of woodland caribou that inhabits high-elevation forests in British Columbia.',
-        population: 'Declining',
-        threats: ['Habitat loss', 'Climate change', 'Recreation']
+        "name": "Difficult Soldier Beetle",
+        "scientificName": "Silis difficilis",
+        "frenchName": "Cantharide difficile",
+        "status": "Unrankable (Subnational)",
+        "description": "Difficult Soldier Beetle (Silis difficilis) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
       },
       {
-        name: 'Orca (Southern Resident)',
-        scientificName: 'Orcinus orca',
-        status: 'Endangered',
-        description: 'The southern resident killer whale population is critically endangered, with only about 75 individuals remaining.',
-        population: 'Critically low',
-        threats: ['Pollution', 'Noise', 'Prey availability']
+        "name": "Gloomy Jewel Beetle",
+        "scientificName": "Dicerca lugubris",
+        "frenchName": "Bupreste lugubre",
+        "status": "Unrankable (Subnational)",
+        "description": "Gloomy Jewel Beetle (Dicerca lugubris) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
       },
       {
-        name: 'White Sturgeon',
-        scientificName: 'Acipenser transmontanus',
-        status: 'Endangered',
-        description: 'The largest freshwater fish in North America, found in the Fraser and Columbia River systems.',
-        population: 'Declining',
-        threats: ['Habitat loss', 'Dams', 'Overfishing']
+        "name": "Aradus debilis",
+        "scientificName": "Aradus debilis",
+        "frenchName": "",
+        "status": "Unrankable (Subnational)",
+        "description": "Aradus debilis (Aradus debilis) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
       },
       {
-        name: 'Marbled Murrelet',
-        scientificName: 'Brachyramphus marmoratus',
-        status: 'Threatened',
-        description: 'A seabird that nests in old-growth forests. Its nesting behavior was unknown until the 1970s.',
-        population: 'Declining',
-        threats: ['Logging', 'Climate change', 'Predation']
+        "name": "Flat-footed Mason Wasp",
+        "scientificName": "Euodynerus planitarsis",
+        "frenchName": "Eum\u00e8ne \u00e0 tarses plats",
+        "status": "Unrankable (Subnational)",
+        "description": "Flat-footed Mason Wasp (Euodynerus planitarsis) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
       }
     ],
-    trends: {
-      overallDecline: -31,
-      speciesAtRisk: 78,
-      recoveryPrograms: 18,
-      protectedAreas: 12.5
+    "trends": {
+      "overallDecline": -15,
+      "speciesAtRisk": 5,
+      "recoveryPrograms": 0,
+      "protectedAreas": 0.0
     }
   },
-  'ON': {
-    species: [
+  "NU": {
+    "species": [
       {
-        name: 'Blanding\'s Turtle',
-        scientificName: 'Emydoidea blandingii',
-        status: 'Threatened',
-        description: 'A medium-sized turtle with a distinctive yellow throat. Found in wetlands and shallow waters across Ontario.',
-        population: 'Declining',
-        threats: ['Habitat loss', 'Road mortality', 'Nest predation']
+        "name": "Fowler's Knotweed",
+        "scientificName": "Polygonum fowleri",
+        "frenchName": "Renou\u00e9e de Fowler",
+        "status": "Vulnerable (Subnational)",
+        "description": "Fowler's Knotweed (Polygonum fowleri) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
       },
       {
-        name: 'Eastern Massasauga Rattlesnake',
-        scientificName: 'Sistrurus catenatus catenatus',
-        status: 'Threatened',
-        description: 'Ontario\'s only venomous snake. Found in wetlands and grasslands in the southern part of the province.',
-        population: 'Declining',
-        threats: ['Habitat loss', 'Persecution', 'Road mortality']
+        "name": "Crazy-scale Cup Lichen",
+        "scientificName": "Cladonia turgida",
+        "frenchName": "Cladonie enfl\u00e9e",
+        "status": "Unrankable (Subnational)",
+        "description": "Crazy-scale Cup Lichen (Cladonia turgida) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
       },
       {
-        name: 'Piping Plover',
-        scientificName: 'Charadrius melodus',
-        status: 'Endangered',
-        description: 'A small shorebird that nests on sandy beaches along the Great Lakes and Atlantic coast.',
-        population: 'Stable',
-        threats: ['Habitat disturbance', 'Predation', 'Climate change']
+        "name": "Barbilophozia hatcheri",
+        "scientificName": "Barbilophozia hatcheri",
+        "frenchName": "",
+        "status": "Unrankable (Subnational)",
+        "description": "Barbilophozia hatcheri (Barbilophozia hatcheri) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
       },
       {
-        name: 'American Eel',
-        scientificName: 'Anguilla rostrata',
-        status: 'Threatened',
-        description: 'A catadromous fish that migrates from the Sargasso Sea to freshwater rivers and lakes.',
-        population: 'Declining',
-        threats: ['Dams', 'Pollution', 'Overfishing']
+        "name": "Euura sagmarius",
+        "scientificName": "Euura sagmarius",
+        "frenchName": "",
+        "status": "Unrankable (Subnational)",
+        "description": "Euura sagmarius (Euura sagmarius) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
       },
       {
-        name: 'Red-headed Woodpecker',
-        scientificName: 'Melanerpes erythrocephalus',
-        status: 'Threatened',
-        description: 'A striking woodpecker with a bright red head. Declining due to habitat loss and competition.',
-        population: 'Declining',
-        threats: ['Habitat loss', 'Competition', 'Climate change']
+        "name": "Circumpolar Money Spider",
+        "scientificName": "Erigone arctica",
+        "frenchName": "\u00c9rigonie circumpolaire",
+        "status": "Secure (Subnational)",
+        "description": "Circumpolar Money Spider (Erigone arctica) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
       }
     ],
-    trends: {
-      overallDecline: -19,
-      speciesAtRisk: 67,
-      recoveryPrograms: 15,
-      protectedAreas: 9.8
+    "trends": {
+      "overallDecline": -15,
+      "speciesAtRisk": 5,
+      "recoveryPrograms": 0,
+      "protectedAreas": 0.0
     }
   },
-  'QC': {
-    species: [
+  "BC": {
+    "species": [
       {
-        name: 'Beluga Whale',
-        scientificName: 'Delphinapterus leucas',
-        status: 'Endangered',
-        description: 'The St. Lawrence beluga population is isolated and critically endangered due to pollution and habitat degradation.',
-        population: 'Critically low',
-        threats: ['Pollution', 'Noise', 'Climate change']
+        "name": "Cascades Coal Bee Fly",
+        "scientificName": "Anthrax cascadensis",
+        "frenchName": "Bombyle des Cascades",
+        "status": "Unknown (Subnational)",
+        "description": "Cascades Coal Bee Fly (Anthrax cascadensis) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
       },
       {
-        name: 'Atlantic Walrus',
-        scientificName: 'Odobenus rosmarus rosmarus',
-        status: 'Endangered',
-        description: 'Once abundant in the Gulf of St. Lawrence, now extirpated from Quebec waters.',
-        population: 'Extirpated',
-        threats: ['Overhunting', 'Climate change', 'Habitat loss']
+        "name": "Bucculatrix pomifoliella",
+        "scientificName": "Bucculatrix pomifoliella",
+        "frenchName": "",
+        "status": "Unknown (Subnational)",
+        "description": "Bucculatrix pomifoliella (Bucculatrix pomifoliella) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
       },
       {
-        name: 'Wood Turtle',
-        scientificName: 'Glyptemys insculpta',
-        status: 'Threatened',
-        description: 'A semi-aquatic turtle found in rivers and streams across southern Quebec.',
-        population: 'Declining',
-        threats: ['Habitat loss', 'Road mortality', 'Collection']
+        "name": "Northern Elegant Sedge",
+        "scientificName": "Carex concinna",
+        "frenchName": "Carex \u00e9l\u00e9gant",
+        "status": "Secure (Subnational)",
+        "description": "Northern Elegant Sedge (Carex concinna) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
       },
       {
-        name: 'Bicknell\'s Thrush',
-        scientificName: 'Catharus bicknelli',
-        status: 'Threatened',
-        description: 'A high-elevation songbird that breeds in the mountains of Quebec and winters in the Caribbean.',
-        population: 'Declining',
-        threats: ['Climate change', 'Habitat loss', 'Acid rain']
+        "name": "Excrement Clown Beetle",
+        "scientificName": "Margarinotus merdarius",
+        "frenchName": "Hister des excr\u00e9ments",
+        "status": "Not Applicable (Subnational)",
+        "description": "Excrement Clown Beetle (Margarinotus merdarius) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
       },
       {
-        name: 'Rusty Blackbird',
-        scientificName: 'Euphagus carolinus',
-        status: 'Threatened',
-        description: 'A migratory songbird that has experienced dramatic population declines across its range.',
-        population: 'Declining',
-        threats: ['Habitat loss', 'Climate change', 'Pesticides']
+        "name": "Red-necked Stint",
+        "scientificName": "Calidris ruficollis",
+        "frenchName": "B\u00e9casseau \u00e0 col roux",
+        "status": "Not Applicable (Subnational)",
+        "description": "Red-necked Stint (Calidris ruficollis) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
       }
     ],
-    trends: {
-      overallDecline: -27,
-      speciesAtRisk: 52,
-      recoveryPrograms: 11,
-      protectedAreas: 7.9
+    "trends": {
+      "overallDecline": -15,
+      "speciesAtRisk": 5,
+      "recoveryPrograms": 0,
+      "protectedAreas": 0.0
+    }
+  },
+  "AB": {
+    "species": [
+      {
+        "name": "Homoneura curva",
+        "scientificName": "Homoneura curva",
+        "frenchName": "",
+        "status": "Unknown (Subnational)",
+        "description": "Homoneura curva (Homoneura curva) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      },
+      {
+        "name": "Egira dolosa",
+        "scientificName": "Egira dolosa",
+        "frenchName": "",
+        "status": "Apparently Secure (Subnational)",
+        "description": "Egira dolosa (Egira dolosa) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      },
+      {
+        "name": "Swamp Dodder",
+        "scientificName": "Cuscuta gronovii",
+        "frenchName": "Cuscute de Gronovius",
+        "status": "Critically Imperiled (Subnational)",
+        "description": "Swamp Dodder (Cuscuta gronovii) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      },
+      {
+        "name": "Spilogona magnipunctata",
+        "scientificName": "Spilogona magnipunctata",
+        "frenchName": "",
+        "status": "Unrankable (Subnational)",
+        "description": "Spilogona magnipunctata (Spilogona magnipunctata) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      },
+      {
+        "name": "Phaeomarasmius distans",
+        "scientificName": "Phaeomarasmius distans",
+        "frenchName": "",
+        "status": "Unrankable (Subnational)",
+        "description": "Phaeomarasmius distans (Phaeomarasmius distans) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      }
+    ],
+    "trends": {
+      "overallDecline": -15,
+      "speciesAtRisk": 5,
+      "recoveryPrograms": 0,
+      "protectedAreas": 0.0
+    }
+  },
+  "SK": {
+    "species": [
+      {
+        "name": "Striped Fishing Spider",
+        "scientificName": "Dolomedes striatus",
+        "frenchName": "Dolom\u00e8de stri\u00e9e",
+        "status": "Unrankable (Subnational)",
+        "description": "Striped Fishing Spider (Dolomedes striatus) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      },
+      {
+        "name": "Pycnoporus cinnabarinus",
+        "scientificName": "Pycnoporus cinnabarinus",
+        "frenchName": "",
+        "status": "Unrankable (Subnational)",
+        "description": "Pycnoporus cinnabarinus (Pycnoporus cinnabarinus) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      },
+      {
+        "name": "Arrenurus auris",
+        "scientificName": "Arrenurus auris",
+        "frenchName": "",
+        "status": "Unknown (Subnational)",
+        "description": "Arrenurus auris (Arrenurus auris) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      },
+      {
+        "name": "Elachiptera sibirica",
+        "scientificName": "Elachiptera sibirica",
+        "frenchName": "",
+        "status": "Unknown (Subnational)",
+        "description": "Elachiptera sibirica (Elachiptera sibirica) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      },
+      {
+        "name": "Porpidia crustulata",
+        "scientificName": "Porpidia crustulata",
+        "frenchName": "",
+        "status": "Critically Imperiled (Subnational)",
+        "description": "Porpidia crustulata (Porpidia crustulata) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      }
+    ],
+    "trends": {
+      "overallDecline": -15,
+      "speciesAtRisk": 5,
+      "recoveryPrograms": 0,
+      "protectedAreas": 0.0
+    }
+  },
+  "MB": {
+    "species": [
+      {
+        "name": "Sepedon spinipes",
+        "scientificName": "Sepedon spinipes",
+        "frenchName": "",
+        "status": "Unknown (Subnational)",
+        "description": "Sepedon spinipes (Sepedon spinipes) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      },
+      {
+        "name": "Wild Bergamot",
+        "scientificName": "Monarda fistulosa",
+        "frenchName": "Monarde fistuleuse",
+        "status": "Secure (Subnational)",
+        "description": "Wild Bergamot (Monarda fistulosa) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      },
+      {
+        "name": "Metanema determinata",
+        "scientificName": "Metanema determinata",
+        "frenchName": "",
+        "status": "Unknown (Subnational)",
+        "description": "Metanema determinata (Metanema determinata) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      },
+      {
+        "name": "Graphomya minuta",
+        "scientificName": "Graphomya minuta",
+        "frenchName": "",
+        "status": "Unknown (Subnational)",
+        "description": "Graphomya minuta (Graphomya minuta) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      },
+      {
+        "name": "Cortinarius velicopius",
+        "scientificName": "Cortinarius velicopius",
+        "frenchName": "",
+        "status": "Unrankable (Subnational)",
+        "description": "Cortinarius velicopius (Cortinarius velicopius) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      }
+    ],
+    "trends": {
+      "overallDecline": -15,
+      "speciesAtRisk": 5,
+      "recoveryPrograms": 0,
+      "protectedAreas": 0.0
+    }
+  },
+  "ON": {
+    "species": [
+      {
+        "name": "Cortinarius semisanguineus",
+        "scientificName": "Cortinarius semisanguineus",
+        "frenchName": "",
+        "status": "Secure (Subnational)",
+        "description": "Cortinarius semisanguineus (Cortinarius semisanguineus) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      },
+      {
+        "name": "Pale Split Wolf Spider",
+        "scientificName": "Schizocosa bilineata",
+        "frenchName": "Lycose \u00e0 deux lignes",
+        "status": "Unrankable (Subnational)",
+        "description": "Pale Split Wolf Spider (Schizocosa bilineata) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      },
+      {
+        "name": "Thricops spiniger",
+        "scientificName": "Thricops spiniger",
+        "frenchName": "",
+        "status": "Unrankable (Subnational)",
+        "description": "Thricops spiniger (Thricops spiniger) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      },
+      {
+        "name": "Gyraulus crista",
+        "scientificName": "Gyraulus crista",
+        "frenchName": "",
+        "status": "Unrankable (Subnational)",
+        "description": "Gyraulus crista (Gyraulus crista) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      },
+      {
+        "name": "Corticium minnsiae",
+        "scientificName": "Corticium minnsiae",
+        "frenchName": "",
+        "status": "Unknown (Subnational)",
+        "description": "Corticium minnsiae (Corticium minnsiae) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      }
+    ],
+    "trends": {
+      "overallDecline": -15,
+      "speciesAtRisk": 5,
+      "recoveryPrograms": 0,
+      "protectedAreas": 0.0
+    }
+  },
+  "QC": {
+    "species": [
+      {
+        "name": "Euphyes vestris",
+        "scientificName": "Euphyes vestris",
+        "frenchName": "",
+        "status": "Secure (Subnational)",
+        "description": "Euphyes vestris (Euphyes vestris) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      },
+      {
+        "name": "Pennsylvania Wood Cockroach",
+        "scientificName": "Parcoblatta pennsylvanica",
+        "frenchName": "Blatte de Pennsylvanie",
+        "status": "Vulnerable (Subnational)",
+        "description": "Pennsylvania Wood Cockroach (Parcoblatta pennsylvanica) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      },
+      {
+        "name": "Blackberry Case-bearing Leaf Beetle",
+        "scientificName": "Neochlamisus eubati",
+        "frenchName": "Cryptoc\u00e9phale des ronces",
+        "status": "Apparently Secure (Subnational)",
+        "description": "Blackberry Case-bearing Leaf Beetle (Neochlamisus eubati) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      },
+      {
+        "name": "Graphocraerus ventralis",
+        "scientificName": "Graphocraerus ventralis",
+        "frenchName": "",
+        "status": "Not Applicable (Subnational)",
+        "description": "Graphocraerus ventralis (Graphocraerus ventralis) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      },
+      {
+        "name": "Eaton's Small Minnow Mayfly",
+        "scientificName": "Procloeon pennulatum",
+        "frenchName": "Ba\u00e9tis fr\u00eale",
+        "status": "Unranked (Subnational)",
+        "description": "Eaton's Small Minnow Mayfly (Procloeon pennulatum) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      }
+    ],
+    "trends": {
+      "overallDecline": -15,
+      "speciesAtRisk": 5,
+      "recoveryPrograms": 0,
+      "protectedAreas": 0.0
+    }
+  },
+  "NB": {
+    "species": [
+      {
+        "name": "Shenahweum minutum",
+        "scientificName": "Shenahweum minutum",
+        "frenchName": "",
+        "status": "Unrankable (Subnational)",
+        "description": "Shenahweum minutum (Shenahweum minutum) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      },
+      {
+        "name": "Pectoral Sandpiper",
+        "scientificName": "Calidris melanotos",
+        "frenchName": "B\u00e9casseau \u00e0 poitrine cendr\u00e9e",
+        "status": "Unknown (Subnational)",
+        "description": "Pectoral Sandpiper (Calidris melanotos) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      },
+      {
+        "name": "Psathyrella senex",
+        "scientificName": "Psathyrella senex",
+        "frenchName": "",
+        "status": "Unrankable (Subnational)",
+        "description": "Psathyrella senex (Psathyrella senex) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      },
+      {
+        "name": "Sympistis chionanthi",
+        "scientificName": "Sympistis chionanthi",
+        "frenchName": "",
+        "status": "Unrankable (Subnational)",
+        "description": "Sympistis chionanthi (Sympistis chionanthi) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      },
+      {
+        "name": "Petromyzon marinus",
+        "scientificName": "Petromyzon marinus",
+        "frenchName": "",
+        "status": "Unknown (Subnational)",
+        "description": "Petromyzon marinus (Petromyzon marinus) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      }
+    ],
+    "trends": {
+      "overallDecline": -15,
+      "speciesAtRisk": 5,
+      "recoveryPrograms": 0,
+      "protectedAreas": 0.0
+    }
+  },
+  "NS": {
+    "species": [
+      {
+        "name": "McDunnough's Small Minnow Mayfly",
+        "scientificName": "Acerpenna macdunnoughi",
+        "frenchName": "Ba\u00e9tis de McDunnough",
+        "status": "Unrankable (Subnational)",
+        "description": "McDunnough's Small Minnow Mayfly (Acerpenna macdunnoughi) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      },
+      {
+        "name": "Papilio cresphontes",
+        "scientificName": "Papilio cresphontes",
+        "frenchName": "",
+        "status": "Not Applicable (Subnational)",
+        "description": "Papilio cresphontes (Papilio cresphontes) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      },
+      {
+        "name": "Eurasian Nest Spider",
+        "scientificName": "Nesticus cellulanus",
+        "frenchName": "Nestique monial",
+        "status": "Not Applicable (Subnational)",
+        "description": "Eurasian Nest Spider (Nesticus cellulanus) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      },
+      {
+        "name": "Eristalis anthophorina",
+        "scientificName": "Eristalis anthophorina",
+        "frenchName": "Syrphe des floraisons",
+        "status": "Secure (Subnational)",
+        "description": "Eristalis anthophorina (Eristalis anthophorina) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      },
+      {
+        "name": "Calm Pitot-tube Caddisfly",
+        "scientificName": "Phylocentropus placidus",
+        "frenchName": "Dipseudopse paisible",
+        "status": "Unrankable (Subnational)",
+        "description": "Calm Pitot-tube Caddisfly (Phylocentropus placidus) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      }
+    ],
+    "trends": {
+      "overallDecline": -15,
+      "speciesAtRisk": 5,
+      "recoveryPrograms": 0,
+      "protectedAreas": 0.0
+    }
+  },
+  "PE": {
+    "species": [
+      {
+        "name": "Sand Tumbling Flower Beetle",
+        "scientificName": "Mordellina infima",
+        "frenchName": "Mordelle des sables",
+        "status": "Unrankable (Subnational)",
+        "description": "Sand Tumbling Flower Beetle (Mordellina infima) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      },
+      {
+        "name": "Pitcher Plant Mosquito",
+        "scientificName": "Wyeomyia smithii",
+        "frenchName": "Moustique des sarrac\u00e9nies",
+        "status": "Apparently Secure (Subnational)",
+        "description": "Pitcher Plant Mosquito (Wyeomyia smithii) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      },
+      {
+        "name": "Crepidotus sepiarius",
+        "scientificName": "Crepidotus sepiarius",
+        "frenchName": "",
+        "status": "Unrankable (Subnational)",
+        "description": "Crepidotus sepiarius (Crepidotus sepiarius) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      },
+      {
+        "name": "Gloomy Harp Ground Beetle",
+        "scientificName": "Lebia moesta",
+        "frenchName": "Harpale morne",
+        "status": "Unrankable (Subnational)",
+        "description": "Gloomy Harp Ground Beetle (Lebia moesta) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      },
+      {
+        "name": "Spargania magnoliata",
+        "scientificName": "Spargania magnoliata",
+        "frenchName": "",
+        "status": "Unrankable (Subnational)",
+        "description": "Spargania magnoliata (Spargania magnoliata) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      }
+    ],
+    "trends": {
+      "overallDecline": -15,
+      "speciesAtRisk": 5,
+      "recoveryPrograms": 0,
+      "protectedAreas": 0.0
+    }
+  },
+  "LB": {
+    "species": [
+      {
+        "name": "Alpine Rush",
+        "scientificName": "Juncus alpinoarticulatus",
+        "frenchName": "Jonc alpin",
+        "status": "Unknown (Subnational)",
+        "description": "Alpine Rush (Juncus alpinoarticulatus) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      },
+      {
+        "name": "Pectoral Click Beetle",
+        "scientificName": "Limonius pectoralis",
+        "frenchName": "Taupin pectoral",
+        "status": "Unrankable (Subnational)",
+        "description": "Pectoral Click Beetle (Limonius pectoralis) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      },
+      {
+        "name": "Zaphne borealis",
+        "scientificName": "Zaphne borealis",
+        "frenchName": "",
+        "status": "Unranked (Subnational)",
+        "description": "Zaphne borealis (Zaphne borealis) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      },
+      {
+        "name": "Steller's Rockbrake",
+        "scientificName": "Cryptogramma stelleri",
+        "frenchName": "Cryptogramme de Steller",
+        "status": "Unknown (Subnational)",
+        "description": "Steller's Rockbrake (Cryptogramma stelleri) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      },
+      {
+        "name": "Saelania glaucescens",
+        "scientificName": "Saelania glaucescens",
+        "frenchName": "",
+        "status": "Unrankable (Subnational)",
+        "description": "Saelania glaucescens (Saelania glaucescens) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      }
+    ],
+    "trends": {
+      "overallDecline": -15,
+      "speciesAtRisk": 5,
+      "recoveryPrograms": 0,
+      "protectedAreas": 0.0
+    }
+  },
+  "NF": {
+    "species": [
+      {
+        "name": "Distended Minute Rove Beetle",
+        "scientificName": "Atheta ventricosa",
+        "frenchName": "Al\u00e9ochare distendue",
+        "status": "Secure (Subnational)",
+        "description": "Distended Minute Rove Beetle (Atheta ventricosa) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      },
+      {
+        "name": "Cochylichroa hoffmanana",
+        "scientificName": "Cochylichroa hoffmanana",
+        "frenchName": "",
+        "status": "Unranked (Subnational)",
+        "description": "Cochylichroa hoffmanana (Cochylichroa hoffmanana) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      },
+      {
+        "name": "Water Sedge",
+        "scientificName": "Carex aquatilis",
+        "frenchName": "Carex aquatique",
+        "status": "Unknown (Subnational)",
+        "description": "Water Sedge (Carex aquatilis) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      },
+      {
+        "name": "Blasiphalia pseudogrisella",
+        "scientificName": "Blasiphalia pseudogrisella",
+        "frenchName": "",
+        "status": "Unranked (Subnational)",
+        "description": "Blasiphalia pseudogrisella (Blasiphalia pseudogrisella) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      },
+      {
+        "name": "Newfoundland Pseudoscorpion",
+        "scientificName": "Syarinus palmeni",
+        "frenchName": "Pseudoscorpion de Terre-Neuve",
+        "status": "Unranked (Subnational)",
+        "description": "Newfoundland Pseudoscorpion (Syarinus palmeni) is found in this province.",
+        "population": "Data not available",
+        "threats": [
+          "Habitat loss",
+          "Climate change"
+        ]
+      }
+    ],
+    "trends": {
+      "overallDecline": -15,
+      "speciesAtRisk": 5,
+      "recoveryPrograms": 0,
+      "protectedAreas": 0.0
     }
   }
 };
