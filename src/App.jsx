@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { MapPin, Leaf, Shield, RefreshCw, AlertCircle } from 'lucide-react';
 import ProvinceSelector from './components/ProvinceSelector';
 import SpeciesCard from './components/SpeciesCard';
-import ConservationTrends from './components/ConservationTrends';
 import apiService from './services/apiService';
 import { CANADIAN_PROVINCES } from './data/provinces';
 
@@ -214,12 +213,6 @@ function App() {
             )}
           </div>
 
-          {speciesData.trends && (
-            <ConservationTrends 
-              trends={speciesData.trends} 
-              provinceName={getProvinceName(selectedProvince)}
-            />
-          )}
         </>
       )}
 

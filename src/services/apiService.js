@@ -96,10 +96,9 @@ class ConservationAPIService {
    * @returns {Promise<Object>} Species data from best available source
    */
   async fetchSpeciesDataFromAPIs(provinceCode) {
+    // Skip API calls and go directly to fallback data
+    // since the configured APIs are not publicly available
     const sources = [
-      () => this.fetchFromNatureServe(provinceCode),
-      () => this.fetchFromECCC(provinceCode),
-      () => this.fetchFromCOSEWIC(provinceCode),
       () => this.getFallbackData(provinceCode)
     ];
 

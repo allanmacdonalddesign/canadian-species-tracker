@@ -74,16 +74,10 @@ const SpeciesCard = ({ species }) => {
           className="status" 
           style={{ backgroundColor: getStatusColor(species.status) }}
         >
-          {species.status}
+          {species.status?.replace(/\s*\([^)]*\)\s*$/, '')}
         </span>
         
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.3rem', color: '#6c757d' }}>
-          {getPopulationIcon(species.population)}
-          <span style={{ fontSize: '0.9rem' }}>{species.population}</span>
-        </div>
       </div>
-      
-      <p className="description">{species.description}</p>
       
       {species.threats && species.threats.length > 0 && (
         <div style={{ marginTop: '1rem' }}>

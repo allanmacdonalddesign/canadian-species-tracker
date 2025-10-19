@@ -84,7 +84,6 @@ src/
 ├── components/
 │   ├── ProvinceSelector.jsx    # Province dropdown component
 │   ├── SpeciesCard.jsx         # Individual species display
-│   └── ConservationTrends.jsx   # Trends and statistics
 ├── data/
 │   ├── provinces.js           # Province/territory data
 │   └── speciesData.js         # Mock species data
