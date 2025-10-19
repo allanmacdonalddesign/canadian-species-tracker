@@ -13,16 +13,39 @@ const SpeciesCard = ({ species }) => {
    * @returns {string} Hex color code for the status
    */
   const getStatusColor = (status) => {
-    switch (status.toLowerCase()) {
-      case 'endangered':
-        return '#dc3545';
-      case 'threatened':
-        return '#fd7e14';
-      case 'special concern':
-        return '#ffc107';
-      default:
-        return '#6c757d';
+    if (!status) return '#6c757d';
+    
+    const statusLower = status.toLowerCase();
+    
+    // Check for conservation status keywords
+    if (statusLower.includes('presumed extirpated') || statusLower.includes('possibly extirpated')) {
+      return '#8b0000'; // Dark red
     }
+    if (statusLower.includes('critically imperiled') || statusLower.includes('imperiled')) {
+      return '#dc3545'; // Red - Endangered equivalent
+    }
+    if (statusLower.includes('vulnerable')) {
+      return '#fd7e14'; // Orange - Threatened equivalent
+    }
+    if (statusLower.includes('apparently secure') || statusLower.includes('secure')) {
+      return '#28a745'; // Green - Secure
+    }
+    if (statusLower.includes('unrankable') || statusLower.includes('unranked') || statusLower.includes('unknown')) {
+      return '#6c757d'; // Gray - Unknown
+    }
+    
+    // Legacy status support
+    if (statusLower === 'endangered') {
+      return '#dc3545';
+    }
+    if (statusLower === 'threatened') {
+      return '#fd7e14';
+    }
+    if (statusLower === 'special concern') {
+      return '#ffc107';
+    }
+    
+    return '#6c757d'; // Default gray
   };
 
   /**
