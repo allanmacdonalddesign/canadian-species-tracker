@@ -3,7 +3,7 @@ export const CANADIAN_PROVINCES = [
   { code: 'BC', name: 'British Columbia' },
   { code: 'MB', name: 'Manitoba' },
   { code: 'NB', name: 'New Brunswick' },
-  { code: 'NL', name: 'Newfoundland and Labrador' },
+  { code: 'NF', name: 'Newfoundland and Labrador' },
   { code: 'NS', name: 'Nova Scotia' },
   { code: 'ON', name: 'Ontario' },
   { code: 'PE', name: 'Prince Edward Island' },
